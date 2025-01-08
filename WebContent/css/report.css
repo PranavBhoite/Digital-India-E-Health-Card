@@ -1,0 +1,289 @@
+@CHARSET "ISO-8859-1";
+.font-robo {
+    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.font-poppins {
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.font-opensans {
+    font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.topnav {
+    border-top: 20px solid #fff;
+    overflow: hidden;
+    /*background-color: #333;*/
+}
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 40px; /* Reduced height */
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 12px; /* Reduced padding */
+  padding-right: 12px; /* Reduced padding */
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 16px; /* Reduced font size */
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Update the background color to green */
+.button-29 {
+  background-image: radial-gradient(100% 100% at 100% 0, #00ff00 0, #008000 100%);
+}
+
+
+.topnav a {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    display: block;
+    /* color: #f2f2f2;
+  color: black;*/
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    transition: 0.6s ease;
+}
+
+.topnav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.logo img {
+    float: left;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.healthlogo img {
+    margin-top: 10px;
+    float: right;
+    width: 70px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+
+/*Alert*/
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background-color: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+
+
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+
+
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+
+li>ol,
+li>ul {
+    margin-bottom: 0;
+}
+
+
+/**
+ * Remove default table spacing.
+ */
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+
+fieldset {
+    min-width: 0;
+    /* [1] */
+    border: 0;
+}
+
+button {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+}
+
+body {
+    font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+.bg-dark {
+    background: #1a1a1a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("..//images//medicalgifbackground.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
